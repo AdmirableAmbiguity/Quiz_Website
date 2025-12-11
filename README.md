@@ -5,7 +5,7 @@ This is a simple Quiz Website made using HTML, CSS, and JavaScript.
 The website shows multiple-choice questions and lets the user select answers.
 At the end, it displays the final score.
 
-🧾 Features
+🧾 **Features**
 
 Clean and simple UI
 
@@ -17,7 +17,7 @@ Score calculation
 
 Responsive layout (works on mobile & desktop)
 
-🛠️ Tech Used
+🛠️ **Tech Used**
 
 HTML → For structure
 
@@ -25,14 +25,14 @@ CSS → For styling
 
 JavaScript → For quiz logic
 
-📂 Project Structure
+📂 **Project Structure**
 /quiz-website
 │
 ├── index.html        # Main webpage
 ├── style.css         # All the CSS styling
 └── script.js         # JavaScript for quiz functionality
 
-🚀 How to Run
+🚀 **How to Run**
 
 Download all project files
 
@@ -42,7 +42,7 @@ Open index.html in any browser
 
 Your quiz will start running
 
-✏️ How to Add More Questions
+✏️ **How to Add More Questions**
 
 Inside script.js, find the question array:
 
@@ -57,7 +57,7 @@ let questions = [
 
 Add more objects in the same format.
 
-📱 Responsive Design
+📱 **Responsive Design**
 
 The website uses basic CSS to make sure:
 
@@ -65,7 +65,7 @@ Buttons adjust properly
 
 Layout works on small and large screens
 
-📘 Beginner Concepts Used
+📘 **Beginner Concepts Used**
 
 padding for spacing
 
@@ -77,7 +77,7 @@ Basic CSS styling
 
 DOM manipulation in JavaScript
 
-🎯 Purpose of This Project
+🎯 **Purpose of This Project**
 
 This is a beginner-friendly project to help you learn:
 
@@ -89,7 +89,7 @@ How JavaScript adds real functionality
 
 Perfect for school projects, beginners, or practice.
 
-❤️ Author
+❤️ **Author**
 
 Created by Kushagra
 Feel free to modify and improve it!
