@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- use utf-8 encoding to display the text correctly -->
+  <title>WEB-D - Scholar's Edge</title>
+  <link rel="stylesheet" href="stylenew.css">
+</head>
+<body>
+  <header>
+    <h1>WEB-D</h1>
+    <h2>Web Design & Development – Chapters</h2>
+  </header>
+
+  <div class="main subject-page">
+
+    <!-- Subject Image -->
+    <img class="subject-logo" src="WEBDLogo.jpg" alt="WEB-D Logo">
+
+    <h3 class="text-center">List of Chapters</h3>
+
+    <!-- Correct Class Name: chapter-list -->
+    <ol class="chapter-list">
+      
+      <!-- Linked Chapter -->
+      <li class="first-chapter">
+        <a href="webd_ch1_quiz.html" style="color:inherit; text-decoration:none; display:block;">
+          <!-- by default all links(<a></a>) tag valo mei underline aati hai to remove it text decoration is set to none -->
+          <!-- display block makes it a full clickable block instead of just a clickable text . ye imp, hai -->
+           <!-- with color inherit it remains the same color as parent, isse txt blue ni hota -->
+          <span>Chapter 1:</span> Introduction to Web Development (Quiz Available)
+          <!-- span used to select that text only -->
+        </a>
+      </li>
+
+      <li>
+        <span>Chapter 2:</span> HTML
+      </li>
+
+      <li>
+        <span>Chapter 3:</span> CSS
+      </li>
+
+      <li>
+        <span>Chapter 4:</span> Tailwind CSS
+      </li>
+
+      <li>
+        <span>Chapter 5:</span> JavaScript
+      </li>
+    </ol>
+
+    <div class="text-center"style="margin-top:20px;" >
+      <!-- margin-top 20px adds 20 pixels above the whole division -->
+      <a href="HomePage.html" class="back-link">← Back to Subjects</a>
+    </div>
+
+  </div>
+</body>
+</html>

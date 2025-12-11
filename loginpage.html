@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Scholar's Edge</title>
+  <link rel="stylesheet" href="stylenew.css">
+  <!-- relationship and hyper text reference -->
+</head>
+<body class="login-page">
+  <header>
+    <h1>Scholar's Edge</h1>
+    <h2>Secure Login for Exam Prep</h2>
+  </header>
+
+  <div class="main">
+    <h2 class="login-title">Enter your Credentials</h2>
+
+    <form onsubmit="login(event)">
+      <div class="form-group">
+        <label for="username">Username (alphabets only)</label>
+        <!-- label is used to make the text clickable and not only the butt -->
+        <input type="text" id="username" placeholder="Enter full name">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password (todayiswebdese)</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="message">Please login. No DDOS allowed 😄</p>
+  </div>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const pass = document.getElementById("password").value;
+
+      if (username === "") {
+        alert("No username entered");
+        return;
+      }
+      if (pass === "") {
+        alert("No password entered");
+        return;
+      }
+
+      // Username: alphabets only
+      if (!/^[A-Za-z]+$/.test(username)) {
+        // regex(regular expression) use hota hai for ensuring that only alphabets are used
+        alert("Username must contain alphabets only.");
+        return;
+      }
+
+      // Fixed password
+      if (pass !== "todayiswebdese") {
+        alert("Password is wrong");
+        return;
+      }
+
+      document.getElementById("message").innerText = "Login successful! Redirecting...";
+
+      setTimeout(function () {
+        window.location.href = "HomePage.html";
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

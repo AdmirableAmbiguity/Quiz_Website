@@ -1,0 +1,201 @@
+/* * → Universal selector (selects ALL elements in the webpage)
+. → Class selector (selects elements that have a specific class name)
+ # → ID selector (selects ONE unique element with a specific ID) */
+* {
+  margin: 0;
+  /* space between whole content aur border of website */
+  padding: 0;
+  /* ar bw content and border */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+header {
+  background: #4a148c;
+  color: #fff;
+  padding: 10px;
+  /* space bw content and border */
+  text-align: center;
+  /* text align used for horizontal alignment */
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main {
+  /* white box comes from here, we can change the dimensions also using it */
+  /* * se unuiversal call hoti hai . se class call hoti hai # se id call hoti hai */
+  background: #fff;
+  /* white */
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 5px;
+  /* text aur box ke beech ka space */
+  border-radius: 10px;
+  /* curved edges ke liye */
+}
+
+.main h1,
+.main h2,
+.main h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #4a148c;
+}
+
+.main p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+button,
+.btn {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  /* removes the underline of the ANCHOR tag */
+}
+
+button:hover,
+.btn:hover {
+  background: #0d47a1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  /* using inine block the link behave like a small button */
+  margin-top: 15px;
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-page .main {
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #999;
+  /* for border on the text box */
+  border-radius: 5px;
+}
+
+input:focus {
+  /* used to change the border color when the textbox is clicked */
+  outline: none;
+  border-color: #1976d2;
+}
+
+#message {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  /* align the item horizontally to centre of the container */
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* for mobile devices if options doesnt fit in single line then it can adjust itself accordingly */
+}
+
+.subject-btn {
+  min-width: 120px;
+}
+
+.subject-logo {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.chapter-list {
+  margin-top: 15px;
+}
+
+.subject-page ol {
+  padding-left: 0;
+}
+
+.chapter-list li {
+  list-style: none;
+  margin-bottom: 6px;
+  padding: 8px;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.chapter-list li span {
+  font-weight: bold;
+}
+
+.chapter-list li.first-chapter {
+  border: 2px solid orange;
+}
+
+.quiz-intro {
+  background: #fff9c4;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.quiz-question {
+  margin-top: 12px;
+  padding: 10px;
+  background: #eee;
+  border-radius: 6px;
+}
+
+.quiz-question h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.quiz-options label {
+  display: block;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
